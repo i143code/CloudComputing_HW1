@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<P>New</P>
+<%=form_for @tabel do |t| %>
+<p> 
+	<%= t.label :Number %>
+	<%= t.text_field :number %>
+</p>
+<%= t.submit %>
+<% end %>
+
+</body>
+</html>
