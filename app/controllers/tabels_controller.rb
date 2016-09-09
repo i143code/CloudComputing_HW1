@@ -1,7 +1,7 @@
 class TabelsController <ApplicationController
 
 	def index
-		@tabel = Tabel.all
+		@tabel = Tabel.all.order('created_at DESC')
 
 	end
 	
