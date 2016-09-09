@@ -1,0 +1,31 @@
+<table class=" table table-striped sortable">
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th></th>
+    </tr>
+  </thead>
+ <% @tabel.each do |user| %>
+  <%= link_to "New", tabel_insert_path(user) %>
+ <tbody>
+     <tr>
+      <td><%= user.number * 1 %></td>
+      <td><%= user.number * 1 %></td>
+      <td><%= user.number * 2%></td>
+      <td><%= user.number * 3 %></td>
+      <td><%= user.number * 4 %></td>
+      <td><%= user.number * 5 %></td>
+      <td><%= user.number * 6%></td>
+      <td><%= user.number * 7 %></td>
+      <td><%= user.number * 8%></td>
+      <td><%= user.number * 9%></td>
+      <td><%= user.number * 10%></td>
+      <td><%= link_to "Edit", edit_tabel_path(user)%></td>
+     <td><%= link_to "Show", tabel_path(user)%></td>
+     <td><%= link_to "destroy", tabel_path(user), method: :delete , data: {confirm:"Are you sure"} %></td>
+    </tr>
+ </tbody>
+   <% end %>
+
+
+
