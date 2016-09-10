@@ -18,8 +18,6 @@ class TabelsController <ApplicationController
 		end
 	end
 
-
-
 	def show
 		@tabel= Tabel.find(params[:id])
 	end
