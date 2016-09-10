@@ -13,7 +13,7 @@
       <th>9</th>
       <th>10</th>
      <th>Edit</th>
-      <th>Delete</th>
+      <th>Show</th>
       <th>Destroy</th>
     </tr>
   </thead>
@@ -32,8 +32,8 @@
       <td><%= user.number * 8%></td>
       <td><%= user.number * 9%></td>
       <td><%= user.number * 10%></td>
-      <td><%= link_to "Edit", edit_tabel_path(user)%></td>
-     <td><%= link_to "Show", tabel_path(user)%></td>
+      <!-- <td><%= link_to "Edit", edit_tabel_path(user)%></td>
+     <td><%= link_to "Show", tabel_path(user)%></td> -->
      <td><%= link_to "destroy", tabel_path(user), method: :delete , data: {confirm:"Are you sure"} %></td>
     </tr>
 
